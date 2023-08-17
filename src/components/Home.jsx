@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { buttonVariants } from "./animation";
 
 const Home = () => {
   return (
@@ -13,7 +14,8 @@ const Home = () => {
       <h2 className="text-3xl mb-8">Welcome To Mie Aceh👋😀</h2>
       <Link to="/base">
         <motion.button
-          animate={{}}
+          variants={buttonVariants}
+          whileHover="whileHover"
           className="py-3 px-8 mt-8 rounded-full border-[2px] font-light cursor-pointer opacity-70"
         >
           Pesan mie-mu🚀
