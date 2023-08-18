@@ -42,6 +42,27 @@ export const containerVariants = {
   },
 };
 
+export const containerVariantsBase = {
+  initial: {
+    x: "100vw",
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      // delay: 0.5,
+      type: "spring",
+      mass: 0.4,
+      damping: 8,
+    },
+  },
+  exit: {
+    x: "-100vw",
+    transition: { ease: easeInOut },
+  },
+};
+
 export const nextVariants = {
   initial: {
     x: "-100vw",
@@ -64,7 +85,7 @@ export const buttonVariants = {
   whileHover: {
     scale: 1.1,
     textShadow: "0px 0px 8px 0px rgb(255,255,255)",
-    color: "rgb(20,184,166)",
+    textShadow: "0px 0px 8px 0px rgb(20,184,166)",
     boxShadow: "0px 0px 8px 0px rgb(20,184,166)",
     border: "2px solid rgb(20,184,166)",
     transition: {

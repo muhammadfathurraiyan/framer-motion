@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { containerVariants, nextVariants, buttonVariants } from "../components/animation";
+import { containerVariantsBase, nextVariants, buttonVariants } from "../components/animation";
 
 const Base = ({ addBase, mie }) => {
   const bases = ["Mie Kuning", "Indomie", "Mie Bihun"];
   return (
     <motion.div
-      variants={containerVariants}
+      variants={containerVariantsBase}
       initial="initial"
       animate="animate"
       c
@@ -61,7 +61,7 @@ const Base = ({ addBase, mie }) => {
             <motion.button
               variants={buttonVariants}
               whileHover="whileHover"
-              className="py-2 px-7 m-[40px_auto_0] rounded-full border-[2px] font-light cursor-pointer opacity-70"
+              className="py-2 px-7 m-[40px_auto_0] rounded-full border-[2px]  border-cyan-500 text-cyan-500 font-light cursor-pointer opacity-70"
             >
               Next
             </motion.button>

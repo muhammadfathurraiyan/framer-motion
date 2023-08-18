@@ -25,7 +25,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/base" element={<Base addBase={addBase} mie={mie} />} />
