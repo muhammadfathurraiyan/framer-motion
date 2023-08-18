@@ -18,7 +18,7 @@ const Home = () => {
         <motion.button
           variants={buttonVariants}
           whileHover="whileHover"
-          className="py-3 px-8 mt-8 rounded-full border-[2px] border-cyan-500 text-cyan-500 font-light cursor-pointer opacity-70"
+          className="py-3 px-8 mt-8 rounded-full border-[2px] border-cyan-400 text-cyan-400 font-light cursor-pointer opacity-70"
         >
           Pesan mie-mu🚀
         </motion.button>

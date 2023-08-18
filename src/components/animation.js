@@ -84,10 +84,9 @@ export const orderChilVariants = {
 export const buttonVariants = {
   whileHover: {
     scale: 1.1,
-    textShadow: "0px 0px 8px 0px rgb(255,255,255)",
-    textShadow: "0px 0px 8px 0px rgb(20,184,166)",
-    boxShadow: "0px 0px 8px 0px rgb(20,184,166)",
-    border: "2px solid rgb(20,184,166)",
+    color: "rgb(20 184 166)",
+    boxShadow: "0px 0px 8px 0px rgb(20 184 166)",
+    border: "2px solid rgb(20 184 166)",
     transition: {
       duration: 0.4,
       repeat: Infinity,
