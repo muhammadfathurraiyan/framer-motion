@@ -1,3 +1,22 @@
+import { easeInOut } from "framer-motion";
+
+export const containerVariantsHome = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      delay: 1.5,
+      duration: 1.5,
+    },
+  },
+  exit: {
+    x: "-100vw",
+    transition: { ease: easeInOut },
+  },
+};
+
 export const containerVariants = {
   initial: {
     x: "100vw",

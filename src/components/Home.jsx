@@ -2,13 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { buttonVariants } from "./animation";
+import { containerVariantsHome } from "./animation";
 
 const Home = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1, duration: 1 }}
+      variants={containerVariantsHome}
+      initial="initial"
+      animate="animate"
+      exit="exit"
       className="max-w-[800px] m-[100px_auto_40px] text-center"
     >
       <h2 className="text-3xl mb-8">Welcome To Mie Aceh👋😀</h2>
