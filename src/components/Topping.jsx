@@ -16,6 +16,7 @@ const Topping = ({ addTopping, mie }) => {
       variants={containerVariants}
       initial="initial"
       animate="animate"
+      exit="exit"
       className="max-w-[300px] m-[100px_auto_40px]"
     >
       <h3 className="mb-3 pb-3 border-b border-b-[rgba(255,255,255,0.6)]">

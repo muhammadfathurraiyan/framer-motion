@@ -13,6 +13,7 @@ const Order = ({ mie }) => {
       variants={containerVariants}
       initial="initial"
       animate="animate"
+      exit="exit"
       className="max-w-[800px] m-[100px_auto_40px] text-center"
     >
       <AnimatePresence>

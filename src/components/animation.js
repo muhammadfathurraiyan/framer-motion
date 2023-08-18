@@ -36,6 +36,10 @@ export const containerVariants = {
       staggerChildren: 0.4,
     },
   },
+  exit: {
+    x: "-100vw",
+    transition: { ease: easeInOut },
+  },
 };
 
 export const nextVariants = {

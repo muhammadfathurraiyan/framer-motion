@@ -10,6 +10,7 @@ const Base = ({ addBase, mie }) => {
       variants={containerVariants}
       initial="initial"
       animate="animate"
+      c
       // tidak perlu properti transition karena sudah di includekan pada properti animate
       // alternative code seperti dibawah
       // initial={{ x: "100vw" }}
