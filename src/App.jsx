@@ -6,12 +6,15 @@ import Base from "./components/Base";
 import Topping from "./components/Topping";
 import Order from "./components/Order";
 import { AnimatePresence } from "framer-motion";
+import Modal from "./components/Modal";
 
 const App = () => {
   const [mie, setMie] = useState({ base: "", toppings: [] });
+
   const addBase = (base) => {
     setMie({ ...mie, base });
   };
+  
   const addTopping = (topping) => {
     let newToppings;
     if (!mie.toppings.includes(topping)) {
@@ -21,11 +24,15 @@ const App = () => {
     }
     setMie({ ...mie, toppings: newToppings });
   };
+
   const location = useLocation();
+
+  const [showModal, setShowModal] = useState(false)
   return (
     <>
       <Header />
-      <AnimatePresence mode="wait">
+      <Modal showModal={showModal} setShowModal={setShowModal} />
+      <AnimatePresence mode="wait" onExitComplete={() => setShowModal(false)}>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/base" element={<Base addBase={addBase} mie={mie} />} />
@@ -33,7 +40,7 @@ const App = () => {
             path="/toppings"
             element={<Topping addTopping={addTopping} mie={mie} />}
           />
-          <Route path="/order" element={<Order mie={mie} />} />
+          <Route path="/order" element={<Order mie={mie} setShowModal={setShowModal} />} />
         </Routes>
       </AnimatePresence>
     </>
