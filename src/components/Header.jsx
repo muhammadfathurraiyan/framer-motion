@@ -3,10 +3,10 @@ import { easeInOut, motion } from "framer-motion";
 
 const svgVariant = {
   initial: {
-    opacity: 0,
+    rotate: -180
   },
   animate: {
-    opacity: 1,
+    rotate: 0,
     transition: {
       duration: 1,
     },
@@ -23,7 +23,7 @@ const pathVariants = {
     pathLength: 1,
     transition: {
       ease: easeInOut,
-      duration: 3
+      duration: 2,
     },
   },
 };
@@ -32,18 +32,16 @@ const Header = () => {
   return (
     <header className="flex p-10 items-center">
       <div className="w-16">
-        <motion.svg
-          variants={svgVariant}
-          initial="initial"
-          animate="animate"
+        <motion.svg 
+        variants={svgVariant}
+        initial="initial"
+        animate="animate"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 261.66 248.79"
+          viewBox="0 0 32 32"
+          className="cls-1"
         >
-          <motion.path
-            variants={pathVariants}
-            className="cls-1"
-            d="m258.16,16.97v214.84c0,7.44-6.03,13.47-13.47,13.47h-12.71c-7.44,0-13.47-6.03-13.47-13.47V95.15c0-3.55-4.85-4.58-6.29-1.34l-63.91,113.48c-2.16,4.86-6.99,7.99-12.31,7.99h-10c-5.31,0-10.13-3.12-12.3-7.97L49.45,93.74c-1.45-3.24-6.29-2.2-6.29,1.34v136.73c0,7.44-6.03,13.47-13.47,13.47h-12.71c-7.44,0-13.47-6.03-13.47-13.47V16.97c0-7.44,6.03-13.47,13.47-13.47h20.59c5.31,0,10.13,3.12,12.3,7.97l78.31,124.92c1.16,2.59,4.85,2.59,6,0L212.16,11.49c2.17-4.86,6.99-7.99,12.31-7.99h20.23c7.44,0,13.47,6.03,13.47,13.47Z"
-          />
+          <motion.path variants={pathVariants} d="M11.4141,15l-8-8L2,8.4141,8.5859,15H2v1a14,14,0,0,0,28,0V15ZM16,28A12.0166,12.0166,0,0,1,4.0415,17h23.917A12.0166,12.0166,0,0,1,16,28Z" />
+          <motion.path variants={pathVariants} d="M22,8a5.0049,5.0049,0,0,0-1.5708.2554A8.0242,8.0242,0,0,0,14,5,7.9364,7.9364,0,0,0,9.0938,6.68L4.4141,2,3,3.4141,9.05,9.4648l.707-.7075A5.96,5.96,0,0,1,14,7a6.02,6.02,0,0,1,4.6875,2.2642,5.06,5.06,0,0,0-.59.61A2.9892,2.9892,0,0,1,15.7544,11H12v2h3.7544a4.98,4.98,0,0,0,3.9033-1.8745A3,3,0,0,1,25,13h2A5.0059,5.0059,0,0,0,23,8Z" />
         </motion.svg>
       </div>
       <motion.div
