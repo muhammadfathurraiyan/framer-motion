@@ -8,3 +8,11 @@
     @apply font-["Ubuntu",_sans-serif] bg-stone-900 text-stone-50
   }
 }
+
+@layer components {
+  .cls-1 {
+    fill: none;
+    stroke: #22d3ee;
+    stroke-width: 7px;
+  }
+}
