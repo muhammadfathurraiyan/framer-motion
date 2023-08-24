@@ -57,7 +57,7 @@ const Base = ({ addBase, mie }) => {
           // animate={{ x: 0 }}
           // transition={{ type: "spring", stiffness: 120 }}
         >
-          <Link to="/toppings">
+          <Link to="/framer-motion/toppings">
             <motion.button
               variants={buttonVariants}
               whileHover="whileHover"

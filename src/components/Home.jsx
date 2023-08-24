@@ -15,7 +15,7 @@ const Home = () => {
       className="max-w-[800px] m-[100px_auto_40px] text-center"
     >
       <h2 className="text-3xl text-center mb-8">Welcome To Mie Aceh 👋😀</h2>
-      <Link to="/base">
+      <Link to="/framer-motion/base">
         <motion.button
           variants={buttonVariants}
           whileHover="whileHover"

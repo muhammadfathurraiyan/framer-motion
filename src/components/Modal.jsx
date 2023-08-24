@@ -41,7 +41,7 @@ const Modal = ({ showModal, setShowModal }) => {
             <h2 className="text-xl text-stone-900">
               Ingin membuat pesanan lagi?
             </h2>
-            <Link to="/">
+            <Link to="/framer-motion/">
               <button className="py-3 px-8 mt-8 rounded-full border-[2px] text-stone-900 border-black font-light cursor-pointer">
                 Ok
               </button>

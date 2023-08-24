@@ -47,7 +47,7 @@ const Topping = ({ addTopping, mie }) => {
           </motion.li>
         ))}
       </ul>
-      <Link to="/order">
+      <Link to="/framer-motion/order">
         <motion.button
           variants={buttonVariants}
           whileHover="whileHover"
