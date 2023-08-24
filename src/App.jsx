@@ -34,13 +34,13 @@ const App = () => {
       <Modal showModal={showModal} setShowModal={setShowModal} />
       <AnimatePresence mode="wait" onExitComplete={() => setShowModal(false)}>
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />} />
-          <Route path="/base" element={<Base addBase={addBase} mie={mie} />} />
+          <Route path="/framer-motion/" element={<Home />} />
+          <Route path="/framer-motion/base" element={<Base addBase={addBase} mie={mie} />} />
           <Route
-            path="/toppings"
+            path="/framer-motion/toppings"
             element={<Topping addTopping={addTopping} mie={mie} />}
           />
-          <Route path="/order" element={<Order mie={mie} setShowModal={setShowModal} />} />
+          <Route path="/framer-motion/order" element={<Order mie={mie} setShowModal={setShowModal} />} />
         </Routes>
       </AnimatePresence>
     </>
