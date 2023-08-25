@@ -41,7 +41,7 @@ const Loader = () => {
         animate={animation}
         className="w-4 h-4 my-20 mx-auto rounded-full bg-cyan-500"
       ></motion.div>
-      <div onClick={() => cycleAnimation()}>Cycle Animation</div>
+      {/* <div onClick={() => cycleAnimation()}>Cycle Animation</div> */}
     </>
   );
 };
